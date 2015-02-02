@@ -5,27 +5,32 @@
     <title>Mobile Demo</title>
     <link rel="stylesheet" href="css/mobile.css">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/jquery.css">
   </head>
   <body>
 
-    <ul>
-      <li>
+    <form class="signup-form">
+      <input name="email" type="text">
+
+      <button>Save</button>
+    </form>
+
+    <ul class="user-list">
+      <li data-foo="James" class="blue">
         Hello
-        <div>
-          <button class="delete-me">a</button>
-        </div>
+        <button class="delete-me">X</button>
       </li>
-      <li>
+      <li data-foo="Cls" class="green">
         Class
-        <button class="delete-me">b</button>
+        <button class="delete-me">X</button>
       </li>
       <li>
         You
-        <button class="delete-me">c</button>
+        <button class="delete-me">X</button>
       </li>
       <li>
         Rock!
-        <button class="delete-me">d</button>
+        <button class="delete-me">X</button>
       </li>
     </ul>
 
