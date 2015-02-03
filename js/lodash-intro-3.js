@@ -37,7 +37,8 @@ $(function () {
   // Redraw the users list by manually building the
   // HTML string and inserting values.
   function redrawUsers() {
-    $('.user-list').html(usersTemplate({ users: users }));
+    var lis = usersTemplate({ users: users });
+    $('.user-list').html(lis);
   }
 
 });

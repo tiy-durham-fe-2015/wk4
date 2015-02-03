@@ -34,8 +34,29 @@ $(function () {
   // HTML string and inserting values.
   function redrawUsers() {
     $('.user-list').html(users.map(function (user) {
-      return '<li>' + user.firstName + ' ' + user.lastName + '</li>';
+      return '<li><span>' +
+        user.firstName +
+        '</span><span>' +
+        user.lastName +
+        '</span></li>';
     }));
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 });
