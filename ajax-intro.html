@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX, wut wut?</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+        color: #0777f7;
+      }
+
+      .avatar-pic {
+        max-height: 2em;
+        max-width: 2em;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 2em;
+        margin-right: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-content">
+    </div>
+
+    <script id="profileTemplate" type="text/html">
+      <h1>
+        <a href="<%- m.html_url %>">
+          <img class="avatar-pic" src="<%- m.avatar_url %>" alt="avatar url">
+          <%- m.name %>
+        </a>
+      </h1>
+      <ul>
+        <li class="company">
+          <%- m.company %>
+        </li>
+        <li class="location">
+          <%- m.location %>
+        </li>
+      </ul>
+    </script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/lodash/lodash.min.js"></script>
+    <script src="js/ajax-intro.js"></script>
+  </body>
+</html>
